@@ -1,0 +1,74 @@
+
+<html>
+	<head>
+        
+		<title>Room Control Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">  
+                <link rel="stylesheet" type="text/css" href="dropdown.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+
+        <div class="navbar">
+			<a href="home.html">Home</a>
+			<a href="insert.html">Insert Room</a>
+                        
+                        <a href="#"><form action="Room_Management" method="POST"><button type="submit" name="submit" style="color: white; background-color: #333; margin-top: 3px;" value="cancel" >All Room Details</button></form></a>           
+			<a href="contact.html">Contact Us</a> 
+                        <a href="admin.html">Log Out</a>
+	</div>
+        
+        <br>
+
+        
+
+
+		<div id="signin" style="width: 370px;  margin-top: 65px; margin-left: 40%; padding-top: 10px; padding-left: 16px;
+        background-color:black; opacity: 0.8;">
+
+
+			<form action="Room_Management" method="post">
+
+				<h1 style="margin-left: 25%; color: white;">Create Room</h1>
+				<br>
+				
+				<input type="number" id="room_id" name="room_id" required placeholder="Room ID*" >
+				<br><br>
+
+                                <select id="room_type" name="room_type" style="width: 90%; height: 7%;" required >
+                                    
+						<option value="" disabled selected hidden>Room Type*</option>
+						<option>Single</option>
+						<option>Double</option>
+						<option>Deluxe</option>
+						<option>Singlex</option>
+				</select>
+				<br><br>
+
+                                <select id="room_loc" name="room_loc" style="width: 90%; height: 7%;" required >
+						
+                                                <option value="" disabled selected hidden>Room Location*</option>
+						<option>1st Floor</option>
+						<option>2nd Floor</option>
+						<option>3rd Floor</option>
+						<option>4th Floor</option>
+				</select>
+				<br><br>
+
+                                <input type="number" id="room_price" name="room_price" required placeholder="Room Price*" >
+				<br><br>
+				  
+			  
+				<div class="clearfix">
+					
+					<button type="submit" value="Create" class="signupbtn" id="sub" name="submit">Create</button>
+				</div>
+
+			</form>
+                    
+                </div>
+
+	</body>
+</html>

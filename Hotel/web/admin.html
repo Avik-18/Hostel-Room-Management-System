@@ -1,0 +1,65 @@
+<html>
+	<head>
+		
+		<title>Admin Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">  
+		<link rel="stylesheet" type="text/css" href="dropdown.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+
+		<div class="navbar">
+			<a href="home.html">Home</a>
+			<div class="dropdown">
+			  <button class="dropbtn">Account 
+			  </button>
+			  <div class="dropdown-content">
+				<a href="login.html">Sign In</a>
+				<a href="signup.html">Sign Up</a>
+				<a href="admin.html">Admin</a>
+			  </div>
+			</div> 
+			<a href="contact.html">Contact Us</a>
+		  </div>
+            <br>
+
+		<div id="signin" style="width: 370px; margin-top: 65px; margin-left: 40%; padding-top: 10px; padding-left: 16px;
+        background-color:white; opacity: 0.8;">
+	
+			<h1 style="margin-left: 25%;">Admin Login</h1>
+
+
+			<form action="Room_Management" method="post">
+
+
+				<label>Username:</label>
+				
+				<input type="text" id="usr" name="usr" required placeholder="admin" >
+				<br><br>
+
+				<label>Password:</label>
+				
+				<input type="password" id="pwd" name="pwd" required>
+				<br><br>
+
+				
+
+				<label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				  </label>
+				  
+			  
+				  <div class="clearfix">
+					<button type="submit" class="signupbtn" id="sub" name="submit" value="Admin Login">Login</button>
+				  </div>
+
+			</form>
+
+		</div>
+		
+
+
+	</body>
+</html>

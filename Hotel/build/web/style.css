@@ -1,0 +1,130 @@
+body
+{
+    margin: 0px;
+    background-image: url("img1.jpg");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
+
+#profile
+{
+
+    background-image: url("user.png");
+    background-size: 100px; 
+    background-repeat: no-repeat;
+}
+
+
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ input[type=text], input[type=password], input[type=number]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 10px 22px 0px;
+  display: inline-block;
+  border: 1px solid black;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button{
+    border: none; 
+    outline: none; 
+    background-color: black; 
+    color:deepskyblue;
+    margin-top: 12px;
+}
+
+.cancelbtn, .signupbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px 5px;
+  border-radius: 20px;
+  border:none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 40%;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.signbtn{
+  float: left;
+  width: 40%;
+
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#customers td, #customers th {
+
+  padding: 12px;
+}
+
+#customers tr{
+  
+  color: white;
+}
+
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;;
+  text-align: left;
+  background-color: #04AA6D;
+  color: black;
+  opacity: 1.0;
+}
